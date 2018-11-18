@@ -5,6 +5,7 @@ $(() => {
   filterButton.click(() => {
     let tweetsContainer = $('.stream-container')
     tweetsContainer.empty()
+    tweetsContainer.append($(tweetTemplate))
   })
 
   // add button to nav
