@@ -1,4 +1,4 @@
-var tweetTemplate = `<li class="js-stream-item stream-item stream-item
+var tweetTemplate = (config) => `<li class="js-stream-item stream-item stream-item
 " data-item-id="1063953466823892992" id="stream-item-tweet-1063953466823892992" data-item-type="tweet" data-suggestion-json="{&quot;suggestion_details&quot;:{&quot;suggestion_type&quot;:&quot;RankedOrganicTweet&quot;,&quot;controller_data&quot;:&quot;DAABCgABAAAAAJECIBEAAA==&quot;},&quot;tweet_ids&quot;:&quot;1063953466823892992&quot;,&quot;scribe_component&quot;:&quot;tweet&quot;}">
     
 
@@ -23,9 +23,9 @@ var tweetTemplate = `<li class="js-stream-item stream-item stream-item
       
       <div class="stream-item-header">
           <a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="/DanielJMoran" data-user-id="114817436">
-      <img class="avatar js-action-profile-avatar" src="https://pbs.twimg.com/profile_images/932498552147787776/dJW2XyHm_bigger.jpg" alt="">
+      <img class="avatar js-action-profile-avatar" src="${config.user.profile_image_url}" alt="">
     <span class="FullNameGroup">
-      <strong class="fullname show-popup-with-id u-textTruncate " data-aria-label-part="">Dan</strong><span>‏</span><span class="UserBadges"></span><span class="UserNameBreak">&nbsp;</span></span><span class="username u-dir u-textTruncate" dir="ltr" data-aria-label-part="">@<b>DanielJMoran</b></span></a>
+      <strong class="fullname show-popup-with-id u-textTruncate " data-aria-label-part="">${config.user.name}</strong><span>‏</span><span class="UserBadges"></span><span class="UserNameBreak">&nbsp;</span></span><span class="username u-dir u-textTruncate" dir="ltr" data-aria-label-part="">@<b>${config.user.screen_name}</b></span></a>
 
         
         <small class="time">
@@ -97,31 +97,13 @@ var tweetTemplate = `<li class="js-stream-item stream-item stream-item
 
       
         <div class="js-tweet-text-container">
-  <p class="TweetTextSize  js-tweet-text tweet-text" lang="en" data-aria-label-part="0">Experiments with tessellation based on a depth texture input for dynamic snow are going... pretty decent? <a href="/hashtag/madewithunity?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s><b>madewithunity</b></a> <a href="/hashtag/screenshotsaturday?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s><b>screenshotsaturday</b></a><a href="https://t.co/2Vh4KXGO9w" class="twitter-timeline-link u-hidden" data-pre-embedded="true" dir="ltr">pic.twitter.com/2Vh4KXGO9w</a></p>
+  <p class="TweetTextSize  js-tweet-text tweet-text" lang="en" data-aria-label-part="0">${config.text}</p>
 </div>
 
 
       
 
       
-            <div class="AdaptiveMediaOuterContainer">
-    <div class="AdaptiveMedia
-        
-        is-square
-        
-        
-        
-        ">
-      <div class="AdaptiveMedia-container">
-          <div class="AdaptiveMedia-singlePhoto" style="padding-top: calc(0.6936936936936937 * 100% - 0.5px);">
-    <div class="AdaptiveMedia-photoContainer js-adaptive-photo " data-image-url="https://pbs.twimg.com/media/DsPr6lfV4AA-BBY.jpg" data-element-context="platform_photo_card" style="background-color:rgba(52,54,64,1.0);" data-dominant-color="[52,54,64]">
-  <img data-aria-label-part="" src="https://pbs.twimg.com/media/DsPr6lfV4AA-BBY.jpg" alt="" style="width: 100%; top: -0px;">
-</div>
-
-
-</div>
-      </div>
-    </div>
   </div>
 
 

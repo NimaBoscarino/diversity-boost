@@ -5,7 +5,16 @@ $(() => {
   filterButton.click(() => {
     let tweetsContainer = $('.stream-container')
     tweetsContainer.empty()
-    tweetsContainer.append($(tweetTemplate))
+
+    // get tweets from server
+    $.get('http://localhost:3000', (tweets) => {
+      console.log('TWEETS!', tweets)
+
+      tweets.forEach(tweet => {      
+        tweetsContainer.append($(tweetTemplate(tweet)))
+      })
+    })
+ 
   })
 
   // add button to nav
