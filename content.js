@@ -7,7 +7,7 @@ $(() => {
     tweetsContainer.empty()
 
     // get tweets from server
-    $.get('http://localhost:3000', (tweets) => {
+    $.get('https://diversity-filter.herokuapp.com', (tweets) => {
       console.log('TWEETS!', tweets)
 
       tweets.forEach(tweet => {      
