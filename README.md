@@ -1,4 +1,4 @@
-# Diversity Filter, a Chrome extension
+# Diversity Boost, a Chrome extension
 
 A Chrome extension that adds a "Diversity Boost!" plugin to my twitter home feed.
 
