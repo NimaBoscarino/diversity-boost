@@ -1,4 +1,4 @@
-var tweetTemplate = (tweet) => `<li class="js-stream-item stream-item stream-item
+var flatTweetTemplate = (tweet) => `<li class="js-stream-item stream-item stream-item
 " data-item-id="${tweet.id_str}" id="stream-item-tweet-${tweet.id_str}" data-item-type="tweet" data-suggestion-json="{&quot;suggestion_details&quot;:{&quot;suggestion_type&quot;:&quot;RankedTimelineTweet&quot;,&quot;controller_data&quot;:&quot;DAABCgABAAAIRAECAAEAAA==&quot;},&quot;tweet_ids&quot;:&quot;${tweet.id_str}&quot;,&quot;scribe_component&quot;:&quot;tweet&quot;}">
     
 

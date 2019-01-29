@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Diversity Filter",
+  "name": "Diversity Boost",
   "version": "0.1",
   "content_scripts": [
     {
@@ -9,7 +9,20 @@
         "https://twitter.com/*"
       ],
       "css": ["content.css"],
-      "js": ["jquery.js", "tweets.js", "tweetTemplate.js", "content.js"]
+      "js": [
+        "jquery.js",
+        "tweets.js",
+        "hmac-sha1.js",                
+        "oauth-1.0a.js",
+        "flatTweetTemplate.js",
+        "tweetTemplates.js",
+        "identifyTweet.js",              
+        "content.js"
+      ]
     }
-  ]
+  ],
+  "permissions": [
+    "http://api.twitter.com/",
+    "https://api.twitter.com/"
+  ]  
 }
