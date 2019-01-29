@@ -1,3 +1,5 @@
+let tweets = allTweets
+
 $(() => {
   // create button
   let filterButton = $('<button id="filter-button" class="js-global-new-tweet js-tooltip EdgeButton EdgeButton--primary js-dynamic-tooltip">Diversity Boost!</button>')
@@ -6,6 +8,11 @@ $(() => {
     let tweetsContainer = $('.stream-container')
     tweetsContainer.empty()
 
+    tweets.forEach(tweet => {      
+      tweetsContainer.append($(tweetTemplate(tweet)))
+    })
+
+    /* FOR LATER, don't kill heroku now
     // get tweets from server
     $.get('https://diversity-filter.herokuapp.com', (tweets) => {
       console.log('TWEETS!', tweets)
@@ -14,6 +21,7 @@ $(() => {
         tweetsContainer.append($(tweetTemplate(tweet)))
       })
     })
+    */
  
   })
 

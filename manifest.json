@@ -9,7 +9,7 @@
         "https://twitter.com/*"
       ],
       "css": ["content.css"],
-      "js": ["jquery.js", "tweetTemplate.js", "content.js"]
+      "js": ["jquery.js", "tweets.js", "tweetTemplate.js", "content.js"]
     }
   ]
 }
