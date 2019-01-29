@@ -2,6 +2,10 @@
 
 A Chrome extension that adds a "Diversity Boost!" button to your twitter home feed.
 
+## The Goal
+
+To address our own inherent biases and prejudices that are perpetuated by the way that social media caters content to us. Instead, we are *choosing* to expose ourselves to voices that the Twitter (or Netflix, Youtube, Facebook, etc.) algorithm hides from us. One ideal use case for this extension is to track engagement habits (likes, retweets, etc.) both *with* and *without* the Diversity Boost enabled to see if we exhibit measurable differences in behaviour.
+
 ## Installation instructions:
 
 In Chrome, go to "More Tools" -> Extensions. Then, in the top-right corner toggle on the "Developer Mode". This will reveal a bar of buttons, including one that says "Load unpacked". Click that button, and in the resulting popup navigate to the folder for this project. Select the folder! Congratulations, you have installed the extension!
@@ -32,6 +36,7 @@ To do this, we need two things:
 1. A function to identify the type of tweet: `identifyTweet.js`
 2. A suite of functions used for generating different types of tweet elements: `tweetTemplates.js`
 
+Within all these tweet types there are also some variation. E.g. a flat tweet may be part of a thread! Tweets can have hashtags and @mentions in them, which should be rendered properly. For now, though, they'll just be text. One step at a time 😊
 
 ## The story so far!
 
@@ -40,5 +45,18 @@ Flat tweet rendering is *almost* complete. The process was to copy over the HTML
 What we need for now is:
 
 1. More tweet templates - Rosy, Nima
+  - take a look at the reference JSON files (`tweetTemplateReference`)for the structure of particular tweet types
 2. Logic for figuring out tweet types - Rosy, Nima
 3. OAuth-ed requests to Twitter API to fetch live tweets - Nima (for now)
+
+## Next Steps
+
+After the rendering pipeline is set up (get tweets from Twitter API + render propely), the next step is focusing on creating a small but unobtrusive GUI for adjusting the boost-sorting algorithm. This GUI will be summoned by clicking on an icon in the toolbar. This'll be fun, because I haven't coded up a GUI for a Chrome extension before!
+
+The GUI should also allow users to paste in their own Twitter API keys, so that they get their own timeline, not Nima's 😄
+
+Eventually, it'll also be good to have some onboarding flow. Ideally, when a user installs the extension and goes to Twitter.com, they'll get a pop-up prompting them to paste in their Twitter keys. Then they'll be presented with 10 (optionally more, with pagination) users that they follow, and the choice to boost that user with a slider.
+
+The boost settings (sliders) view should always be accessible through the GUI.
+
+As (very) stretch, it would be nice to have different boost "profiles" that can be managed and switched to, à la Chrome user profile.
