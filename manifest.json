@@ -2,6 +2,9 @@
   "manifest_version": 2,
   "name": "Diversity Boost",
   "version": "0.1",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -26,6 +29,7 @@
   ],
   "permissions": [
     "http://api.twitter.com/",
-    "https://api.twitter.com/"
+    "https://api.twitter.com/",
+    "storage"
   ]  
 }

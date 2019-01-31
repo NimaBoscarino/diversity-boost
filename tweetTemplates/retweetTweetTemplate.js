@@ -179,7 +179,7 @@ const retweetTweetTemplate = tweet => `<li class="js-stream-item stream-item str
       <span class="u-hiddenVisually">Retweeted</span>
     </div>
       <span class="ProfileTweet-actionCount">
-    <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true">3</span>
+    <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true">${tweet.retweeted_status.retweet_count}</span>
   </span>
 
   </button>
@@ -194,7 +194,7 @@ const retweetTweetTemplate = tweet => `<li class="js-stream-item stream-item str
       <span class="u-hiddenVisually">Like</span>
     </div>
       <span class="ProfileTweet-actionCount">
-    <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true">3</span>
+    <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true">${tweet.retweeted_status.favorite_count}</span>
   </span>
 
   </button><button class="ProfileTweet-actionButtonUndo ProfileTweet-action--unfavorite u-linkClean js-actionButton js-actionFavorite" type="button">
@@ -204,7 +204,7 @@ const retweetTweetTemplate = tweet => `<li class="js-stream-item stream-item str
       <span class="u-hiddenVisually">Liked</span>
     </div>
       <span class="ProfileTweet-actionCount">
-    <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true">3</span>
+    <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true">${tweet.retweeted_status.favorite_count}</span>
   </span>
 
   </button>
