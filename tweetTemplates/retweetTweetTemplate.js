@@ -8,7 +8,7 @@ const retweetTweetTemplate = tweet => `<li class="js-stream-item stream-item str
       
        tweet-has-context
        dismissible-content
-" data-tweet-id="${tweet.id_str}" data-item-id="${tweet.id_str}" data-permalink-path="/${tweet.retweeted_status.user.screen_name}/status/${tweet.id_str}" data-conversation-id="${tweet.id_str}" data-tweet-nonce="${tweet.id_str}-e1b4040f-8dab-4f14-980d-c250125ab623" data-tweet-stat-initialized="true" data-retweet-id="1090748460754558976" data-retweeter="MmeLiles" data-screen-name="${tweet.retweeted_status.user.screen_name}" data-name="${tweet.retweeted_status.user.name}t" data-user-id="${tweet.user.id_str}" data-you-follow="false" data-follows-you="false" data-you-block="false" data-mentions="MmeLiles" data-reply-to-users-json="[{&quot;id_str&quot;:&quot;${tweet.user.id_str}&quot;,&quot;screen_name&quot;:&quot;${tweet.retweeted_status.user.screen_name}&quot;,&quot;name&quot;:&quot;${tweet.retweeted_status.user.name}t&quot;,&quot;emojified_name&quot;:{&quot;text&quot;:&quot;${tweet.retweeted_status.user.name}t&quot;,&quot;emojified_text_as_html&quot;:&quot;${tweet.retweeted_status.user.name}t&quot;}},{&quot;id_str&quot;:&quot;4422071900&quot;,&quot;screen_name&quot;:&quot;MmeLiles&quot;,&quot;name&quot;:&quot;${tweet.user.name}&quot;,&quot;emojified_name&quot;:{&quot;text&quot;:&quot;${tweet.user.name}&quot;,&quot;emojified_text_as_html&quot;:&quot;${tweet.user.name}&quot;}}]" data-disclosure-type="" data-component-context="suggest_ranked_organic_tweet">
+" data-tweet-id="${tweet.id_str}" data-item-id="${tweet.id_str}" data-permalink-path="/${tweet.retweeted_status.user.screen_name}/status/${tweet.id_str}" data-conversation-id="${tweet.id_str}" data-tweet-nonce="${tweet.id_str}-e1b4040f-8dab-4f14-980d-c250125ab623" data-tweet-stat-initialized="true" data-retweet-id="1090748460754558976" data-retweeter="MmeLiles" data-screen-name="${tweet.retweeted_status.user.screen_name}" data-name="${tweet.retweeted_status.user.name}t" data-user-id="${tweet.user.id_str}" data-you-follow="false" data-follows-you="false" data-you-block="false" data-mentions="MmeLiles" data-reply-to-users-json="[{&quot;id_str&quot;:&quot;${tweet.user.id_str}&quot;,&quot;screen_name&quot;:&quot;${tweet.retweeted_status.user.screen_name}&quot;,&quot;name&quot;:&quot;${tweet.retweeted_status.user.name}t&quot;,&quot;emojified_name&quot;:{&quot;text&quot;:&quot;${tweet.retweeted_status.user.name}t&quot;,&quot;emojified_text_as_html&quot;:&quot;${tweet.retweeted_status.user.name}t&quot;}},{&quot;id_str&quot;:&quot;${tweet.user.id_str}&quot;,&quot;screen_name&quot;:&quot;MmeLiles&quot;,&quot;name&quot;:&quot;${tweet.user.name}&quot;,&quot;emojified_name&quot;:{&quot;text&quot;:&quot;${tweet.user.name}&quot;,&quot;emojified_text_as_html&quot;:&quot;${tweet.user.name}&quot;}}]" data-disclosure-type="" data-component-context="suggest_ranked_organic_tweet">
 
     <div class="context">
       
@@ -21,7 +21,7 @@ const retweetTweetTemplate = tweet => `<li class="js-stream-item stream-item str
 
 
             <span class="js-retweet-text">
-                <a class="pretty-link js-user-profile-link" href="/MmeLiles" data-user-id="4422071900" rel="noopener"><b>${tweet.user.name}</b></a> Retweeted
+                <a class="pretty-link js-user-profile-link" href="/MmeLiles" data-user-id="${tweet.user.id_str}" rel="noopener"><b>${tweet.user.name}</b></a> Retweeted
             </span>
 
 
