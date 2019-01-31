@@ -18,7 +18,8 @@
         "tweetTemplates/retweetTweetTemplate.js",
         "tweetTemplates/imageTweetTemplate.js",
         "tweetTemplates/tweetTemplates.js",
-        "identifyTweet.js",              
+        "identifyTweet.js",
+        "enc-base64-min.js",
         "content.js"
       ]
     }

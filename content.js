@@ -1,7 +1,6 @@
 let tweets = allTweets
 
-
-function getTweets2(cb) {
+function getTweets(cb) {
   // Initialize
   const oauth = OAuth({
     consumer: {
@@ -10,7 +9,7 @@ function getTweets2(cb) {
     },
     signature_method: 'HMAC-SHA1',
     hash_function(base_string, key) {
-      return CryptoJS.HmacSHA1(base_string, key).toString(CryptoJS.enc.Base64).toString(CryptoJS.enc.Hex);
+      return CryptoJS.HmacSHA1(base_string, key).toString(CryptoJS.enc.Base64);
     }
   });
 
@@ -25,79 +24,18 @@ function getTweets2(cb) {
     secret: '***REMOVED***'
   };
 
-  let oauth_object = oauth.authorize(request_data, token)
-
-  function score(key) {
-    if (key === "oauth_consumer_key") {
-      return 7
-    } else if (key === "oauth_token") {
-      return 6
-    } else if (key === "oauth_signature_method") {
-      return 5
-    } else if (key === "oauth_timestamp") {
-      return 3
-    } else if (key === "oauth_nonce") {
-      return 2
-    } else if (key === "oauth_version") {
-      return 1
-    } else if (key === "oauth_signature") {
-      return 0
-    }
-  }
-
-  let oauth_array = Object.keys(oauth_object)
-  .sort((a, b) => {
-    return score(b) - score(a)
-  })
-  .map(key => `${key}="${oauth_object[key]}"`)
-
-  let oauth_string = oauth_array.join(',')
-  const oauth_headers = oauth.toHeader(oauth.authorize(request_data, token))
-
-
-  console.log(oauth_headers)
-
   $.ajax({
     url: request_data.url,
     type: request_data.method,
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    beforeSend: function (jqXHR, settings) {
-      jqXHR.setRequestHeader('Authorization', "OAuth " + oauth_string);
-    }
-
+    data: oauth.authorize(request_data, token)
+  }).done(function(data) {
+    // Process your data here
+    console.log('wooo', data)
   }).done(function(data) {
     // Process your data here
     cb(data)
   }).catch((e) => console.log(e));
-
 }
-
-
-function getTweets(cb) {
-
-  var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://api.twitter.com/1.1/statuses/home_timeline.json?count",
-    "method": "GET",
-    "headers": {
-      "Content-Type": "application/json",
-      "Authorization": "OAuth oauth_consumer_key=\"***REMOVED***\",oauth_token=\"***REMOVED***\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1548741113\",oauth_nonce=\"sSDiw478vWy\",oauth_version=\"1.0\",oauth_signature=\"DpIThnu5iSHogKw%2FR9v4v6OGj0k%3D\"",
-      "cache-control": "no-cache",
-    },
-    "processData": false,
-    "data": ""
-  }
-  
-  $.ajax(settings).done(function (response) {
-    cb(response);
-  });  
-
-}
-
-
 
 $(() => {
 
@@ -108,29 +46,14 @@ $(() => {
     let tweetsContainer = $('.stream-container')
     tweetsContainer.empty()
 
-    // getTweets2((tweets) => {
-    //   tweets.forEach(tweet => {      
-    //     tweetsContainer.append($(tweetTemplate(tweet)))
-    //   })  
-    // })
-
+    getTweets((tweets) => {
       tweets.forEach(tweet => {  
         let tweetType = identifyTweet(tweet)
         let tweetElement = tweetTemplates[tweetType](tweet)
 
         tweetsContainer.append($(tweetElement))
       })  
-
-    /* FOR LATER, don't kill heroku now
-    // get tweets from server
-    $.get('https://diversity-filter.herokuapp.com', (tweets) => {
-      console.log('TWEETS!', tweets)
-
-      tweets.forEach(tweet => {      
-        tweetsContainer.append($(tweetTemplate(tweet)))
-      })
     })
-    */
  
   })
 
