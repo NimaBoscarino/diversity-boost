@@ -1,0 +1,308 @@
+{
+  "created_at": "Mon Jan 28 22:14:15 +0000 2019",
+  "id": 1090010189141549000,
+  "id_str": "1090010189141549061",
+  "text": "RT @lauragift21: If you are a developer in Nigeria and you're still in school please apply for this. It's a great offer you won't want to m…",
+  "truncated": false,
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [
+      {
+        "screen_name": "lauragift21",
+        "name": "Gift Egwuenu ✨",
+        "id": 3424878503,
+        "id_str": "3424878503",
+        "indices": [
+          3,
+          15
+        ]
+      }
+    ],
+    "urls": []
+  },
+  "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 297102985,
+    "id_str": "297102985",
+    "name": "Veni Kunche",
+    "screen_name": "venikunche",
+    "location": "Madison ✈ Washington, DC",
+    "description": "I curate @codewithveni 👩🏽‍💻. Working on @diversifytechco and @ionickits. Sr. Software Engineer @ USGS. @UWMadison alum.",
+    "url": "https://t.co/9JWxAYAht0",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/9JWxAYAht0",
+            "expanded_url": "http://bit.ly/codewithveniv",
+            "display_url": "bit.ly/codewithveniv",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 17721,
+    "friends_count": 3230,
+    "listed_count": 514,
+    "created_at": "Wed May 11 23:07:54 +0000 2011",
+    "favourites_count": 413,
+    "utc_offset": null,
+    "time_zone": null,
+    "geo_enabled": true,
+    "verified": false,
+    "statuses_count": 9667,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "000000",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/973051708963217408/GkGG8M95_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/973051708963217408/GkGG8M95_normal.jpg",
+    "profile_link_color": "E85C41",
+    "profile_sidebar_border_color": "000000",
+    "profile_sidebar_fill_color": "000000",
+    "profile_text_color": "000000",
+    "profile_use_background_image": false,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": true,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "retweeted_status": {
+    "created_at": "Mon Jan 28 14:13:45 +0000 2019",
+    "id": 1089889267013296100,
+    "id_str": "1089889267013296128",
+    "text": "If you are a developer in Nigeria and you're still in school please apply for this. It's a great offer you won't wa… https://t.co/idmPHKKlSo",
+    "truncated": true,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/idmPHKKlSo",
+          "expanded_url": "https://twitter.com/i/web/status/1089889267013296128",
+          "display_url": "twitter.com/i/web/status/1…",
+          "indices": [
+            117,
+            140
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 3424878503,
+      "id_str": "3424878503",
+      "name": "Gift Egwuenu ✨",
+      "screen_name": "lauragift21",
+      "location": "Lagos, Nigeria",
+      "description": "Software Developer, Passionate about making the web accessible and Photography. Co-organizer @ConcatenateConf, Chapter Lead @vuevixensNG",
+      "url": "https://t.co/l26BAuzzTO",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/l26BAuzzTO",
+              "expanded_url": "http://giftegwuenu.com",
+              "display_url": "giftegwuenu.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2953,
+      "friends_count": 864,
+      "listed_count": 41,
+      "created_at": "Sat Aug 15 22:39:44 +0000 2015",
+      "favourites_count": 21919,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 5714,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F58EA8",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme11/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme11/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1071298089942687745/8PxV1AIm_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1071298089942687745/8PxV1AIm_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/3424878503/1545787693",
+      "profile_link_color": "1B95E0",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": true,
+    "quoted_status_id": 1089887288828588000,
+    "quoted_status_id_str": "1089887288828588032",
+    "quoted_status": {
+      "created_at": "Mon Jan 28 14:05:53 +0000 2019",
+      "id": 1089887288828588000,
+      "id_str": "1089887288828588032",
+      "text": "I know a lot of DevRels who work at all kinds of companies. If your company offers SaaS products, would you please… https://t.co/WwVipvdKWF",
+      "truncated": true,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/WwVipvdKWF",
+            "expanded_url": "https://twitter.com/i/web/status/1089887288828588032",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              116,
+              139
+            ]
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 622960227,
+        "id_str": "622960227",
+        "name": "Tierney Cyren",
+        "screen_name": "bitandbang",
+        "location": "Brooklyn, NY",
+        "description": "⬡.js - Senior Cloud Developer Advocate at @Microsoft. @nodejs Community Committee. Human clickbait. Unapologetic emoji usage. He/him. @pacabites ❤️. DMs open 📬",
+        "url": "https://t.co/Qr6YgoX8G1",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/Qr6YgoX8G1",
+                "expanded_url": "https://bnb.im",
+                "display_url": "bnb.im",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 4950,
+        "friends_count": 683,
+        "listed_count": 172,
+        "created_at": "Sat Jun 30 14:57:31 +0000 2012",
+        "favourites_count": 48103,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 26008,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "FA743E",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme10/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme10/bg.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1049324877340192770/hvHeuHuN_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1049324877340192770/hvHeuHuN_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/622960227/1545424071",
+        "profile_link_color": "5AC878",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 24,
+      "favorite_count": 44,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "possibly_sensitive_appealable": false,
+      "lang": "en"
+    },
+    "retweet_count": 24,
+    "favorite_count": 23,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  "is_quote_status": true,
+  "quoted_status_id": 1089887288828588000,
+  "quoted_status_id_str": "1089887288828588032",
+  "retweet_count": 24,
+  "favorite_count": 0,
+  "favorited": false,
+  "retweeted": false,
+  "lang": "en"
+}

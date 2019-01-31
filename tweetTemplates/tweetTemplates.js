@@ -1,5 +1,6 @@
 const tweetTemplates = {
   flat: flatTweetTemplate,
-  image: imageTweetTemplate
+  image: imageTweetTemplate,
+  retweet: retweetTweetTemplate
   /* register more tweet templates in here */
 }

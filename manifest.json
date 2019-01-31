@@ -14,9 +14,10 @@
         "tweets.js",
         "hmac-sha1.js",                
         "oauth-1.0a.js",
-        "flatTweetTemplate.js",
-        "imageTweetTemplate.js",
-        "tweetTemplates.js",
+        "tweetTemplates/flatTweetTemplate.js",
+        "tweetTemplates/retweetTweetTemplate.js",
+        "tweetTemplates/imageTweetTemplate.js",
+        "tweetTemplates/tweetTemplates.js",
         "identifyTweet.js",              
         "content.js"
       ]
