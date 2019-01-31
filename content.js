@@ -46,10 +46,6 @@ function getTweets(cb) {
     type: request_data.method,
     data: oauth.authorize(request_data, token)
   }).done(function(data) {
-    // Process your data here
-    console.log('wooo', data)
-  }).done(function(data) {
-    // Process your data here
     cb(data)
   }).catch((e) => console.log(e));
 }

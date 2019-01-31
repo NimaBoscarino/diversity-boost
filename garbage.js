@@ -2,8 +2,8 @@
 // Initialize
 const oauth = OAuth({
   consumer: {
-    key: '***REMOVED***',
-    secret: '***REMOVED***'
+    key: 'jPxLZTy7VCID3dEpn4qdBPuXH',
+    secret: 'AilwpjLK7bepjM9cnThPjFRcsjkOIo4f9NmTi5YoE3SmpiOC3k'
   },
   signature_method: 'HMAC-SHA1',
   hash_function(base_string, key) {
@@ -18,8 +18,8 @@ const request_data = {
 
 // Note: The token is optional for some requests
 const token = {
-  key: '***REMOVED***',
-  secret: '***REMOVED***'
+  key: '569703265-KtkScTSnnxNVXcmZSmqLA3Jn0e3aLnWF5j37CxVj',
+  secret: '2ukqqDtg74xkcVHZhFIqRlm15jgMV1nkHoAr8c827Zv6v'
 };
 
 let oauth_object = oauth.authorize(request_data, token)
